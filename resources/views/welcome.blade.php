@@ -44,15 +44,15 @@
         .box-1 {
             margin-top: 10%;
             align-items: center;
-            border: 2px solid orange;
+           
         }
         .box-1 h1 {
             font-family: Montserrat;
             font-style: normal;
             font-weight: 400;
-            font-size: 2.2em;
+            font-size: 1.8em;
             line-height: 49px;
-            align-items: center;
+            padding-left: 5%;
             color: #000000;
         }
         .box-1 button {

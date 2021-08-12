@@ -51,6 +51,9 @@
             width: 30%;
             margin-top: 5%
         }
+        .config-itens .item {
+            border-bottom: 1px solid #30734A;
+        }
     }
 </style>
 
