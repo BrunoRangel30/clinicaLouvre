@@ -19,9 +19,10 @@ class MelhorEnvioController extends Controller
     }
     public function callback(){
         //adquiri um token
+      //  dd($_GET["code"]);
         if(isset($_GET["code"])){
             return [
-                'codigo' => json_decode($_GET["code"]),
+                'codigo' => $_GET["code"],
                 'status'   => "OK",
             ];
         }else{
