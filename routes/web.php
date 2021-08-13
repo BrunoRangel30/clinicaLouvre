@@ -22,3 +22,4 @@ Route::get('/', function () {
 })->name('autorizacao');*/
 
 Route::get('authorization','App\Http\Controllers\MelhorEnvioController@autorizacaoAPI')->name('autorizacaoAPI');
+Route::get('authorization/callback','App\Http\Controllers\MelhorEnvioController@callback')->name('callback');

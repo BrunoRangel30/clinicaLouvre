@@ -12,8 +12,14 @@ return [
     | any other location as required by the application or its packages.
     |
     */
+    
 
     'name' => env('APP_NAME', 'Laravel'),
+    'client_id' => env('CLIENT_ID'),
+    'client_secret' => env('CLIENT_SECRET'),
+    'redirect_uri' => env('REDIRECT_URI'),
+    'urlME' => env('URL'),
+
 
     /*
     |--------------------------------------------------------------------------
