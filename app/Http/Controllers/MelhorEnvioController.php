@@ -17,13 +17,12 @@ class MelhorEnvioController extends Controller
         return redirect($urlCurl);
         
     }
-    public function callback(){
+    public function callback(Request $request){
         //adquiri um token
       //  dd($_GET["code"]);
-        if(isset($_GET["code"])){
-            $result['codigo'] = $_GET["code"];
-            $result['status'] = 'OK';
-            return json_encode($result);
+         $request->session()->put('codigo',$_GET["code"]);
+         if(session()->get('codigo') != null){
+            return json_encode(session()->get('codigo'));
         }else{
             $result['codigo'] = null;
             $result['status'] = 'Código não encontrado';
