@@ -21,15 +21,14 @@ class MelhorEnvioController extends Controller
         //adquiri um token
       //  dd($_GET["code"]);
         if(isset($_GET["code"])){
-            return [
-                'codigo' => $_GET["code"],
-                'status'   => "OK",
-            ];
+            $result['codigo'] = $_GET["code"];
+            $result['status'] = 'OK';
+            return json_encode($result);
         }else{
-            return [
-                'codigo' => null,
-                'status'   => "codigo não retornado",
-            ];
+            $result['codigo'] = null;
+            $result['status'] = 'Código não encontrado';
+            return json_encode($result);
+           
         }
     
     }
