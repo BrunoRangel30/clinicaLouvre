@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*Route::get('/autorizacao', function () {
+    return view('welcome');
+})->name('autorizacao');*/
+
+Route::get('authorization','App\Http\Controllers\MelhorEnvioController@autorizacaoAPI')->name('autorizacaoAPI');
