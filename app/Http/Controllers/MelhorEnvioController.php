@@ -19,7 +19,7 @@ class MelhorEnvioController extends Controller
     }
     public function callback(){
         //adquiri um token
-        return $access_token = json_decode($this->getAccessToken($_GET["code"]));
+        return  json_decode($_GET["code"]);
     
     }
 }
