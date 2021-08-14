@@ -53,10 +53,16 @@
             width: 30%;
             margin-top: 5%
         }
-        .config-itens .item {
-            border-bottom: 1px solid #30734A;
-            text-align: center;
+        .config-itens .item-menu {
             display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .config-itens .item {
+            border-bottom: 2px solid #30734A;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 </style>
