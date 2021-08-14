@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <style>
-    .config-itens .item-menu {
+    /* .config-itens .item-menu {
         border-radius: 0px;
         /* background: #FFFFFF;*/
-        bottom: 0px;
-        /*opacity: 0;*/
-        /*border: 2px solid yellow;*/
-    }
+    /*opacity: 0;*/
+    /*border: 2px solid yellow;
+    }*/
     
     .config-itens .item {
         /* H5 / H5 Regular */
@@ -24,6 +23,9 @@
         /* Primary-Green / Green */
         color: #9AD5B1 !important;
         opacity: 1;
+    }
+    
+    .config-itens a {
         border-bottom: 4px solid #30734A;
     }
     
@@ -53,6 +55,8 @@
         }
         .config-itens .item {
             border-bottom: 1px solid #30734A;
+            text-align: center;
+            display: block;
         }
     }
 </style>
@@ -68,8 +72,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
+
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -78,7 +84,7 @@
 
 <body class="antialiased">
     <main>
-        <div class="container-md container-lg">
+        <div class="container-md container-lg container-sm">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
