@@ -20,13 +20,9 @@
         display: flex;
         align-items: center;
         text-align: center;
-        /* Primary-Green / Green */
-        /* color: #9AD5B1 !important;*/
         opacity: 1;
+        color: #9AD5B1 !important;
     }
-    /*  .config-itens a {
-        border-bottom: 4px solid #30734A;
-    }*/
     
     .config-itens .active {
         font-family: Montserrat;
@@ -44,15 +40,11 @@
         border-bottom: 4px solid #30734A;
     }
     
-    .config-itens .no-select {
-        color: #9AD5B1 !important;
-    }
-    
     .logo {
         display: block;
         margin-right: auto;
         margin-left: auto;
-        width: 100%;
+        /*  width: 100%;*/
         margin-top: 5%
     }
     
@@ -64,13 +56,19 @@
         margin-top: 5%
     }
     
+    .navbar-light .navbar-toggler {
+        color: #9AD5B1 !important;
+        border-color: rgba(0, 0, 0, .1);
+    }
+    
     @media all and (max-width: 800px) {
         .logo {
             display: block;
             margin-right: auto;
             margin-left: auto;
-            width: 30%;
-            margin-top: 5%
+            /* width: 30%;*/
+            margin-top: 5%;
+            margin-bottom: 5%
         }
         .config-itens .item-menu {
             display: block;
@@ -116,7 +114,7 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                         <a class="navbar-brand" href="#">
-                            <img class="logo" src="img/logo_louvre.png" alt="Logo">
+                            <img class="logo" src="img/logo.svg" alt="Logo">
                         </a>
                     </div>
                 </div>
@@ -124,7 +122,7 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                 <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav config-itens">
+                    <ul class="navbar-nav config-itens pt-3">
                         <li class="nav-item item-menu">
                             <a class="nav-link  active" href="#">Início</a>
                         </li>
