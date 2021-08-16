@@ -52,9 +52,7 @@
         .box-1 {
             margin-top: 10%;
         }
-        .nav-link a{
-            text-align: center !important;
-        }
+      
         .box-1 h1 {
             font-family: Montserrat;
             width: 100%;
@@ -79,14 +77,6 @@
     }
 </style>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
-    <!-- Styles -->
-
-</head>
 @section('content')
 
 <body>

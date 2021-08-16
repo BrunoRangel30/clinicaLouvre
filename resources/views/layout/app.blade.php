@@ -8,7 +8,7 @@
     /*border: 2px solid yellow;
     }*/
     
-    .config-itens .item {
+    .config-itens .no-select {
         /* H5 / H5 Regular */
         font-family: Montserrat;
         margin-left: 24px;
@@ -21,12 +21,31 @@
         align-items: center;
         text-align: center;
         /* Primary-Green / Green */
-        color: #9AD5B1 !important;
+        /* color: #9AD5B1 !important;*/
         opacity: 1;
     }
-    
-    .config-itens a {
+    /*  .config-itens a {
         border-bottom: 4px solid #30734A;
+    }*/
+    
+    .config-itens .active {
+        font-family: Montserrat;
+        margin-left: 24px;
+        margin-right: 24px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.2em;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #30734A !important;
+        font-weight: 600;
+        border-bottom: 4px solid #30734A;
+    }
+    
+    .config-itens .no-select {
+        color: #9AD5B1 !important;
     }
     
     .logo {
@@ -59,7 +78,7 @@
             margin-right: auto;
         }
         .config-itens .item {
-            border-bottom: 2px solid #30734A;
+            /* border-bottom: 2px solid #30734A;*/
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -71,7 +90,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Clínica Louvre</title>
 
     <!-- Fonts -->
     <!--<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">-->
@@ -84,8 +103,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="{{url(mix('js/home.js'))}}"></script>
 </head>
 
 <body class="antialiased">
@@ -104,14 +125,14 @@
                   </button>
                 <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav config-itens">
-                        <li class="nav-item item-menu ">
-                            <a class="nav-link item" href="#">Início</a>
+                        <li class="nav-item item-menu">
+                            <a class="nav-link  active" href="#">Início</a>
                         </li>
                         <li class="nav-item item-menu">
-                            <a class="nav-link item" href="#">Serviços</a>
+                            <a class="nav-link no-select" href="#">Serviços</a>
                         </li>
                         <li class="nav-item item-menu">
-                            <a class="nav-link item" href="#">Diferenciais</a>
+                            <a class="nav-link  no-select" href="#">Diferenciais</a>
                         </li>
                     </ul>
                 </div>
