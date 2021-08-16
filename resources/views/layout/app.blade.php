@@ -8,6 +8,15 @@
     /*border: 2px solid yellow;
     }*/
     
+    .config-nav .navbar-expand-lg {
+        position: -webkit-sticky;
+        /* Necessário para funcionar no Safari */
+        position: sticky;
+        top: 0;
+        background: #FFFFFF;
+        z-index: 1000;
+    }
+    
     .config-itens .no-select {
         /* H5 / H5 Regular */
         font-family: Montserrat;
@@ -109,7 +118,7 @@
 
 <body class="antialiased">
     <main>
-        <div class="container-md container-lg container-sm">
+        <div class="container-md container-lg container-sm config-nav">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
@@ -137,6 +146,7 @@
             </nav>
             @yield('content')
         </div>
+
     </main>
 </body>
 

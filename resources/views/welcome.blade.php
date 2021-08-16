@@ -133,22 +133,38 @@
     .card-body .link-botao {
         position: static;
         width: 89px;
-        /* H6 / H6 SemiBold */
         font-family: Montserrat;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
-        /* identical to box height */
         text-align: center;
-        /* Primary-Green / Green */
         color: #9AD5B1;
-        /* Inside Auto Layout */
         flex: none;
         order: 0;
         flex-grow: 0;
         margin: 0px 0px;
         text-decoration: none;
+    }
+    
+    .diferenciais img {
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .text p {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        padding: 15px;
+        text-align: center;
     }
     
     @media all and (max-width: 800px) {
@@ -271,9 +287,30 @@
     </section>
     <section class="servicos pt-5">
         <h1 class="titulo">Nossos Diferenciais</h1>
-        <div class="row">
-            <div class="col-lg-2">
-
+        <div class="row  pt-3 diferenciais">
+            <div class="col p-3">
+                <img src="img/diferenciais/profissionais_qualificados.svg" class="card-img-top" alt="profissionais_qualificados">
+                <div class="text">
+                    <p>Profissionais Certificados</p>
+                </div>
+            </div>
+            <div class="col p-3">
+                <img src="img/diferenciais/atendimento_rapido.svg" class="card-img-top" alt="atendimento_rapido">
+                <div class="text">
+                    <p> Profissionais Certificados</p>
+                </div>
+            </div>
+            <div class="col p-3">
+                <img src="img/diferenciais/agendamento_online.svg" class="card-img-top" alt="agendamento_online">
+                <div class="text">
+                    <p>Profissionais Certificados</p>
+                </div>
+            </div>
+            <div class="col p-3">
+                <img src="img/diferenciais/pagamentos_facilitados.svg" class="card-img-top" alt="pagamentos_facilitados">
+                <div class="text">
+                    <p>Profissionais Certificados</p>
+                </div>
             </div>
         </div>
     </section>
