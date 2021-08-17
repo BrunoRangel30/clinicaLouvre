@@ -167,9 +167,27 @@
         text-align: center;
     }
     
+    .text a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .text a:hover {
+        color: #000000;
+    }
+    
+    .config-difernciais {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    
     @media all and (max-width: 800px) {
         .box-1 {
             margin-top: 10%;
+        }
+        .config-difernciais {
+            margin-top: 100px;
+            margin-bottom: 100px;
         }
         .box-1 h1 {
             font-family: Montserrat;
@@ -223,93 +241,97 @@
             </div>
         </div>
     </section>
-    <section class="servicos pt-5">
-        <h1 class="titulo">Nossos Serviços</h1>
-        <div class="row pt-3">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <div class="card" style="width: 100%;">
-                    <div class="row">
-                        <div class="col">
-                            <div class="box-image">
-                                <!--<div>Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
-                                <img src="img/servicos/implante-dentario.png" class="card-img-top" alt="...">
+    <section id="servicos-clinica">
+        <div class="servicos pt-5">
+            <h1 class="titulo">Nossos Serviços</h1>
+            <div class="row pt-3">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <div class="card" style="width: 100%;">
+                        <div class="row">
+                            <div class="col">
+                                <div class="box-image">
+                                    <!--<div>Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
+                                    <img src="img/servicos/implante-dentario.png" class="card-img-top" alt="...">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Implante</h5>
-                        <div class="texto-cartao">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="card-body">
+                            <h5 class="card-title">Implante</h5>
+                            <div class="texto-cartao">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <button class="botao"><a href="#" class="link-botao" >Saiba mais</a></button>
                         </div>
-                        <button class="botao"><a href="#" class="link-botao" >Saiba mais</a></button>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <div class="card" style="width: 100%;">
-                    <div class="row">
-                        <div class="col">
-                            <div class="box-image">
-                                <!--<div>Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
-                                <img src="img/servicos/implante-dentario.png" class="card-img-top" alt="...">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <div class="card" style="width: 100%;">
+                        <div class="row">
+                            <div class="col">
+                                <div class="box-image">
+                                    <!--<div>Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
+                                    <img src="img/servicos/implante-dentario.png" class="card-img-top" alt="...">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Cirurgia</h5>
-                        <div class="texto-cartao">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="card-body">
+                            <h5 class="card-title">Cirurgia</h5>
+                            <div class="texto-cartao">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <button class="botao"><a href="#" class="link-botao" >Saiba mais</a></button>
                         </div>
-                        <button class="botao"><a href="#" class="link-botao" >Saiba mais</a></button>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <div class="card" style="width: 100%;">
-                    <div class="row">
-                        <div class="col">
-                            <div class="box-image">
-                                <!--<div>Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
-                                <img src="img/servicos/implante-dentario.png" class="card-img-top" alt="...">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <div class="card" style="width: 100%;">
+                        <div class="row">
+                            <div class="col">
+                                <div class="box-image">
+                                    <!--<div>Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
+                                    <img src="img/servicos/implante-dentario.png" class="card-img-top" alt="...">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Ordontia</h5>
-                        <div class="texto-cartao">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="card-body">
+                            <h5 class="card-title">Ordontia</h5>
+                            <div class="texto-cartao">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <button class="botao"><a href="#" class="link-botao" >Saiba mais</a></button>
                         </div>
-                        <button class="botao"><a href="#" class="link-botao" >Saiba mais</a></button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="servicos pt-5">
-        <h1 class="titulo">Nossos Diferenciais</h1>
-        <div class="row  pt-3 diferenciais">
-            <div class="col p-3">
-                <img src="img/diferenciais/profissionais_qualificados.svg" class="card-img-top" alt="profissionais_qualificados">
-                <div class="text">
-                    <p>Profissionais Certificados</p>
+    <section id="diferenciais-clinica" class="config-difernciais">
+        <div class="servicos">
+            <h1 class="titulo">Nossos Diferenciais</h1>
+            <div class="row  pt-3 diferenciais">
+                <div class="col p-3">
+                    <img src="img/diferenciais/profissionais_qualificados.svg" class="card-img-top" alt="profissionais_qualificados">
+                    <div class="text">
+                        <p>Profissionais Certificados</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col p-3">
-                <img src="img/diferenciais/atendimento_rapido.svg" class="card-img-top" alt="atendimento_rapido">
-                <div class="text">
-                    <p> Profissionais Certificados</p>
+                <div class="col p-3">
+                    <img src="img/diferenciais/atendimento_rapido.svg" class="card-img-top" alt="atendimento_rapido">
+                    <div class="text">
+                        <p> Atendimento rápido e eficaz </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col p-3">
-                <img src="img/diferenciais/agendamento_online.svg" class="card-img-top" alt="agendamento_online">
-                <div class="text">
-                    <p>Profissionais Certificados</p>
+                <div class="col p-3">
+                    <img src="img/diferenciais/agendamento_online.svg" class="card-img-top" alt="agendamento_online">
+                    <div class="text">
+                        <p><a href="https://web.whatsapp.com/send?phone=556199820849" target="_blank">Agendamento online</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col p-3">
-                <img src="img/diferenciais/pagamentos_facilitados.svg" class="card-img-top" alt="pagamentos_facilitados">
-                <div class="text">
-                    <p>Profissionais Certificados</p>
+                <div class="col p-3">
+                    <img src="img/diferenciais/pagamentos_facilitados.svg" class="card-img-top" alt="pagamentos_facilitados">
+                    <div class="text">
+                        <p>Pagamentos facilitados</p>
+                    </div>
                 </div>
             </div>
         </div>

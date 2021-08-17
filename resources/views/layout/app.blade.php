@@ -70,6 +70,42 @@
         border-color: rgba(0, 0, 0, .1);
     }
     
+    .mapa iframe {
+        width: 70%;
+        height: 360px;
+        padding-top: 15px;
+    }
+    
+    .info-rodape img {
+        display: inline-block;
+    }
+    
+    .info-rodape p {
+        display: inline-block;
+        text-align: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        padding-left: 5px;
+        padding-top: 10px;
+    }
+    
+    .config-rodape {
+        margin-top: 50px;
+    }
+    
+    .link-contato {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .link-contato:hover {
+        color: #000000;
+    }
+    
     @media all and (max-width: 800px) {
         .logo {
             display: block;
@@ -89,6 +125,27 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+        .mapa iframe {
+            width: 100%;
+            height: 300px;
+        }
+        .info-rodape img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .info-rodape p {
+            display: block;
+            text-align: center;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+            padding-left: 5px;
+            padding-top: 10px;
         }
     }
 </style>
@@ -133,19 +190,57 @@
                 <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav config-itens pt-3">
                         <li class="nav-item item-menu">
-                            <a class="nav-link  active" href="#">Início</a>
+                            <a class="nav-link  active" href="#box-apresentacao">Início</a>
                         </li>
                         <li class="nav-item item-menu">
-                            <a class="nav-link no-select" href="#">Serviços</a>
+                            <a class="nav-link no-select" href="#servicos-clinica">Serviços</a>
                         </li>
                         <li class="nav-item item-menu">
-                            <a class="nav-link  no-select" href="#">Diferenciais</a>
+                            <a class="nav-link  no-select" href="#diferenciais-clinica">Diferenciais</a>
                         </li>
                     </ul>
                 </div>
             </nav>
             @yield('content')
         </div>
+        <footer>
+            <div class="container-fluid" style="background-color: #FAAB90; padding: 30px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="config-rodape">
+                                <div class="row">
+                                    <div class="info-rodape">
+                                        <img src="img/rodape/relogio.svg">
+                                        <p>Atendimento de segunda a sexta-feira das 09 às 18 horas</p>
+                                    </div>
+                                    <div class="info-rodape">
+                                        <img src="img/rodape/telefone.svg">
+                                        <p>(61) 9 98982-0849</p>
+                                    </div>
+                                    <div class="info-rodape">
+                                        <img src="img/rodape/telefone.svg">
+                                        <p>Atendimento de segunda a sexta-feira das 09 às 18 horas</p>
+                                    </div>
+                                    <div class="info-rodape">
+                                        <img src="img/rodape/contato.svg">
+                                        <p><a class="link-contato" href="mailto:contato@clinicalouvre.com.br?Subject=Título%20da%20mensagem">contato@clinicalouvre.com.br</a></p>
+                                    </div>
+                                    <div class="info-rodape">
+                                        <img src="img/rodape/localizacao.svg">
+                                        <p>Avenida Bosque, nº 160 - Formosa/GO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.7762012213366!2d-47.34021838460501!3d-15.550123621138205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9350a36cf7b36529%3A0xd5cfaa5984ad4245!2sCl%C3%ADnica%20Louvre!5e0!3m2!1spt-BR!2sbr!4v1629177469269!5m2!1spt-BR!2sbr"
+                                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </main>
 </body>
