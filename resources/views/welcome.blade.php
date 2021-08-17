@@ -78,7 +78,6 @@
     .box-image {
         border-bottom: 1px solid #CED4DA;
         width: 100%;
-        padding: 20px;
     }
     
     .texto-cartao .card-text {
@@ -94,7 +93,7 @@
     }
     
     .card .card-img-top {
-        width: 40%;
+        width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -251,7 +250,7 @@
                             <div class="col">
                                 <div class="box-image">
                                     <!--<div>Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
-                                    <img src="img/servicos/implante-dentario.png" class="card-img-top" alt="...">
+                                    <img src="img/servicos/implante-dentario.jpeg" class="card-img-top" alt="...">
                                 </div>
                             </div>
                         </div>
@@ -270,7 +269,7 @@
                             <div class="col">
                                 <div class="box-image">
                                     <!--<div>Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
-                                    <img src="img/servicos/implante-dentario.png" class="card-img-top" alt="...">
+                                    <img src="img/servicos/implante-dentario.jpeg" class="card-img-top" alt="...">
                                 </div>
                             </div>
                         </div>
@@ -289,7 +288,7 @@
                             <div class="col">
                                 <div class="box-image">
                                     <!--<div>Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
-                                    <img src="img/servicos/implante-dentario.png" class="card-img-top" alt="...">
+                                    <img src="img/servicos/implante-dentario.jpeg" class="card-img-top" alt="...">
                                 </div>
                             </div>
                         </div>
