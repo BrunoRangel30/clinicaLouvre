@@ -106,6 +106,11 @@
         color: #000000;
     }
     
+    .info-rodape .icone {
+        font-size: 2.2em;
+        color: #FFFF8B;
+    }
+    
     @media all and (max-width: 800px) {
         .logo {
             display: block;
@@ -164,7 +169,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{{ asset('css/fontawesome/css/all.min.css')}}">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -220,11 +227,15 @@
                                     </div>
                                     <div class="info-rodape">
                                         <img src="img/rodape/contato.svg">
-                                        <p><a class="link-contato" href="mailto:contato@clinicalouvre.com.br?Subject=Título%20da%20mensagem">clinicaslouvre@gmail.com</a></p>
+                                        <p><a class="link-contato" href="mailto:contato@clinicalouvre.com.br?Subject=Título%20da%20mensagem" target="_blank">clinicaslouvre@gmail.com</a></p>
                                     </div>
                                     <div class="info-rodape">
                                         <img src="img/rodape/localizacao.svg">
                                         <p>Avenida Bosque, nº 160 - Formosa/GO</p>
+                                    </div>
+                                    <div class="info-rodape">
+                                        <a class="link-contato" href="https://www.facebook.com/clinicaslouvre" target="_blank"><i class="fab fa-facebook-square icone"></i></a>
+                                        <a class="link-contato p-3" href="https://www.instagram.com/louvreclinica/" target="_blank"><i class="fab fa-instagram icone"></i></a>
                                     </div>
                                 </div>
                             </div>

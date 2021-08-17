@@ -31,5 +31,5 @@
     }
 </style>
 <a class="whatsapp-link" href="https://wa.me/556199820849" target="_blank">
-    <i class="fa fa-whatsapp"></i>
+    <i class="fab fa-whatsapp"></i>
 </a>
