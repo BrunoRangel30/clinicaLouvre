@@ -30,6 +30,6 @@
         }
     }
 </style>
-<a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=556199820849" target="_blank">
+<a class="whatsapp-link" href="https://wa.me/556199820849" target="_blank">
     <i class="fa fa-whatsapp"></i>
 </a>
