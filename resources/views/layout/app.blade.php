@@ -227,7 +227,7 @@
                                     </div>
                                     <div class="info-rodape">
                                         <img src="img/rodape/contato.svg">
-                                        <p><a class="link-contato" href="mailto:contato@clinicalouvre.com.br?Subject=Título%20da%20mensagem" target="_blank">clinicaslouvre@gmail.com</a></p>
+                                        <p><a class="link-contato" href="mailto:clinicaslouvre@gmail.com?Subject=Título%20da%20mensagem" target="_blank">clinicaslouvre@gmail.com</a></p>
                                     </div>
                                     <div class="info-rodape">
                                         <img src="img/rodape/localizacao.svg">
