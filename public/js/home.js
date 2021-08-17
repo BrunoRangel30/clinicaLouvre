@@ -8,6 +8,7 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: targetOffset - menuHeight
         }, 100);
+        console.log('ta chamando aqui')
         $(".config-itens .nav-link").removeClass('active')
         $(".config-itens .nav-link").addClass('no-select')
         $(this).removeClass('no-select');
