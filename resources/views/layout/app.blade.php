@@ -216,15 +216,11 @@
                                     </div>
                                     <div class="info-rodape">
                                         <img src="img/rodape/telefone.svg">
-                                        <p>(61) 9 98982-0849</p>
-                                    </div>
-                                    <div class="info-rodape">
-                                        <img src="img/rodape/telefone.svg">
-                                        <p>Atendimento de segunda a sexta-feira das 09 às 18 horas</p>
+                                        <p><a class="link-contato" href="https://wa.me/556199820849" target="_blank">(61) 99982-0849</a></p>
                                     </div>
                                     <div class="info-rodape">
                                         <img src="img/rodape/contato.svg">
-                                        <p><a class="link-contato" href="mailto:contato@clinicalouvre.com.br?Subject=Título%20da%20mensagem">contato@clinicalouvre.com.br</a></p>
+                                        <p><a class="link-contato" href="mailto:contato@clinicalouvre.com.br?Subject=Título%20da%20mensagem">clinicaslouvre@gmail.com</a></p>
                                     </div>
                                     <div class="info-rodape">
                                         <img src="img/rodape/localizacao.svg">

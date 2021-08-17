@@ -233,7 +233,7 @@
             <div class="col-lg-6 col-md-6 col-xs-6">
                 <div class="box-1">
                     <h1>Esculpindo faces, pintando sorrisos.</h1>
-                    <button><a href="https://web.whatsapp.com/send?phone=556199820849" target="_blank">Clique aqui e agende sua consulta</a></button>
+                    <button><a href="https://wa.me/556199820849" target="_blank">Clique aqui e agende sua consulta</a></button>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
@@ -324,7 +324,7 @@
                 <div class="col p-3">
                     <img src="img/diferenciais/agendamento_online.svg" class="card-img-top" alt="agendamento_online">
                     <div class="text">
-                        <p><a href="https://web.whatsapp.com/send?phone=556199820849" target="_blank">Agendamento online</a></p>
+                        <p><a href="https://wa.me/556199820849" target="_blank">Agendamento online</a></p>
                     </div>
                 </div>
                 <div class="col p-3">
