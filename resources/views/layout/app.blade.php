@@ -219,7 +219,8 @@
                                 <div class="row">
                                     <div class="info-rodape">
                                         <img src="img/rodape/relogio.svg">
-                                        <p>Atendimento de segunda a sexta-feira das 09 às 18 horas</p>
+                                        <p>Atendimento de segunda a sexta-feira das 08 às 18 horas</p>
+                                        <p>Atendimento de segunda a sexta-feira das 08 às 18 horas</p>
                                     </div>
                                     <div class="info-rodape">
                                         <img src="img/rodape/telefone.svg">
