@@ -220,7 +220,7 @@
                                     <div class="info-rodape">
                                         <img src="img/rodape/relogio.svg">
                                         <p>Atendimento de segunda a sexta-feira das 08 às 18 horas</p>
-                                        <p>Atendimento de segunda a sexta-feira das 08 às 18 horas</p>
+                                        <p style="margin-left: 20px;">Sábado de 08 às 12 horas</p>
                                     </div>
                                     <div class="info-rodape">
                                         <img src="img/rodape/telefone.svg">
