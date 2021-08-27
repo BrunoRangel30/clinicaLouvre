@@ -8,6 +8,10 @@
     /*border: 2px solid yellow;
     }*/
     
+    body {
+        background: #E5E5E5;
+    }
+    
     .config-nav .navbar-expand-lg {
         position: -webkit-sticky;
         /* Necessário para funcionar no Safari */
@@ -116,7 +120,7 @@
             display: block;
             margin-right: auto;
             margin-left: auto;
-            /* width: 30%;*/
+            width: 75%;
             margin-top: 5%;
             margin-bottom: 5%
         }

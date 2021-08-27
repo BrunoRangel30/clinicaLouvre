@@ -76,16 +76,14 @@
     }
     
     .box-titulo {
-        border-bottom: 1px solid #CED4DA;
         width: 100%;
         font-family: Montserrat !important;
         font-style: normal;
         font-weight: 600 !important;
         line-height: 29px;
         color: #000000;
-        text-align: center;
         padding: 10px;
-        text-transform: uppercase
+        margin-left: 24px;
     }
     
     .texto-cartao .card-text {
@@ -97,13 +95,14 @@
         line-height: 25px;
         /* Gray-Scale / Gray-700 */
         color: #495057 !important;
-        text-align: justify;
         height: 340px;
         overflow-y: auto;
+        padding-left: 16px
     }
     
     .texto-cartao .card-text i {
-        color: #30734A;
+        color: #FAAB90;
+        font-size: 0.5em;
     }
     /*.card .card-img-top {
         width: 100%;
@@ -164,7 +163,7 @@
     }
     
     .diferenciais img {
-        width: 120px;
+        width: 100px;
         height: 120px;
         display: block;
         margin-right: auto;
@@ -195,6 +194,25 @@
     .config-difernciais {
         margin-top: 150px;
         margin-bottom: 150px;
+    }
+    
+    .linha {
+        /* Linha */
+        height: 4px;
+        /* Primary-Salmon / Salmon */
+        width: 315px;
+        background: #FAAB90;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .triangulo {
+        width: 23.33px;
+        height: 18px;
+        margin-top: 0px;
+        /* Primary-Salmon / Salmon */
+        background: #FAAB90;
+        border-right: 3px solid transparent;
     }
     
     @media all and (max-width: 800px) {
@@ -248,6 +266,34 @@
             /* H6 / H6 Regular */
             padding-left: 15px;
         }
+        .linha {
+            /* Linha */
+            height: 4px;
+            /* Primary-Salmon / Salmon */
+            width: 300px;
+            background: #FAAB90;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+        .diferenciais img {
+            width: 80px;
+            height: 120px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    
+    @media (min-width: 600px) and (max-width: 979px) {
+        .linha {
+            /* Linha */
+            height: 4px;
+            /* Primary-Salmon / Salmon */
+            width: 150px;
+            background: #FAAB90;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
     }
 </style>
 
@@ -273,19 +319,23 @@
             <h1 class="titulo">Nossos Serviços</h1>
             <div class="row pt-3">
                 <div class="col-lg-4 col-md-4 col-xs-6">
-                    <div class="card" style="width: 100%;">
-                        <div class="box-titulo">
-                            <h3>Implante</h3>
+                    <div class="card">
+                        <div class="row">
+                            <div class="box-titulo">
+                                <h3>Implante</h3>
+                                <div class="linha"></div>
+                                <img src="img/servicos/seta.svg">
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="texto-cartao">
                                 <div class="card-text">
                                     <p>Implantodontia é um ramo da Odontologia que se destina ao tratamento da ausência de dentes, com reabilitações protéticas suportadas por implante.</p>
                                     <ul style="list-style: none; padding-left: 12px;">
-                                        <li><i class="fas fa-check"></i> Implantes Unitários</li>
-                                        <li><i class="fas fa-check"></i> Protocolos (Prótese Total Sobre Implantes Fixa)</li>
-                                        <li><i class="fas fa-check"></i> Overdenture (Prótese Total Sobre Implantes Removível)</li>
-                                        <li><i class="fas fa-check"></i> Enxertos Ósseos</li>
+                                        <li><i class="fas fa-circle"></i> Implantes Unitários</li>
+                                        <li><i class="fas fa-circle"></i> Protocolos (Prótese Total Sobre Implantes Fixa)</li>
+                                        <li><i class="fas fa-circle"></i> Overdenture (Prótese Total Sobre Implantes Removível)</li>
+                                        <li><i class="fas fa-circle"></i> Enxertos Ósseos</li>
                                     </ul>
                                 </div>
                             </div>
@@ -294,19 +344,23 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-6">
-                    <div class="card" style="width: 100%;">
-                        <div class="box-titulo">
-                            <h3>Prótese</h3>
+                    <div class="card">
+                        <div class="row">
+                            <div class="box-titulo">
+                                <h3>Prótese</h3>
+                                <div class="linha"></div>
+                                <img src="img/servicos/seta.svg">
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="texto-cartao">
                                 <div class="card-text">
                                     <p>A prótese dentária é a arte dental, ciência que lida com a reposição de tecidos bucais e dentes perdidos, visando restaurar e manter a forma, função, aparência e saúde bucal.</p>
                                     <ul style="list-style: none; padding-right: 3px;">
-                                        <li><i class="fas fa-check"></i> Prótese Total / Dentadura</li>
-                                        <li><i class="fas fa-check"></i> Prótese Estética Removível / Flexível</li>
-                                        <li><i class="fas fa-check"></i> Prótese Fixa / Coroas (“Pivot”)</li>
-                                        <li><i class="fas fa-check"></i> Placa de Bruxismo / Miorrelaxante</li>
+                                        <li><i class="fas fa-circle"></i> Prótese Total / Dentadura</li>
+                                        <li><i class="fas fa-circle"></i> Prótese Estética Removível / Flexível</li>
+                                        <li><i class="fas fa-circle"></i> Prótese Fixa / Coroas (“Pivot”)</li>
+                                        <li><i class="fas fa-circle"></i> Placa de Bruxismo / Miorrelaxante</li>
                                     </ul>
                                 </div>
                             </div>
@@ -315,9 +369,11 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-6">
-                    <div class="card" style="width: 100%;">
+                    <div class="card">
                         <div class="box-titulo">
                             <h3>Clínico Geral</h3>
+                            <div class="linha"></div>
+                            <img src="img/servicos/seta.svg">
                         </div>
                         <div class="card-body">
                             <div class="texto-cartao">
@@ -325,10 +381,10 @@
                                     <p>O dentista clínico geral é o profissional da saúde capacitado na área de odontologia, entre as suas competências estão prevenção, diagnóstico e tratamento de uma ampla variedade de condições, desordens e doenças dos
                                         dentes e gengivas. O dentista clínico geral prestam serviços relacionados a manutenção da higiene oral e saúde bucal.</p>
                                     <!--<ul style="list-style: none">
-                                        <li><i class="fas fa-check"></i> Implantes Unitários</li>
-                                        <li><i class="fas fa-check"></i> Protocolos (Prótese Total Sobre Implantes Fixa)</li>
-                                        <li><i class="fas fa-check"></i> Overdenture (Prótese Total Sobre Implantes Removível)</li>
-                                        <li><i class="fas fa-check"></i> Enxertos Ósseos</li>
+                                        <li><i class="fas fa-circle"></i> Implantes Unitários</li>
+                                        <li><i class="fas fa-circle"></i> Protocolos (Prótese Total Sobre Implantes Fixa)</li>
+                                        <li><i class="fas fa-circle"></i> Overdenture (Prótese Total Sobre Implantes Removível)</li>
+                                        <li><i class="fas fa-circle"></i> Enxertos Ósseos</li>
                                     </ul>-->
                                 </div>
                             </div>
@@ -337,9 +393,11 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-6">
-                    <div class="card" style="width: 100%;">
+                    <div class="card">
                         <div class="box-titulo">
-                            <h3>ORTODONTIA</h3>
+                            <h3>Ortodontia</h3>
+                            <div class="linha"></div>
+                            <img src="img/servicos/seta.svg">
                         </div>
                         <div class="card-body">
                             <div class="texto-cartao">
@@ -348,10 +406,10 @@
                                         limpos, além de prejudicar a sua aparência e a efetividade da mastigação.
                                     </p>
                                     <ul style="list-style: none">
-                                        <li><i class="fas fa-check"></i> Aparelhos Ortodônticos Fixos</li>
-                                        <li><i class="fas fa-check"></i> Aparelhos Ortodônticos Removíveis</li>
-                                        <li><i class="fas fa-check"></i> Aparelho Ortopédico Facial</li>
-                                        <li><i class="fas fa-check"></i> Placas de Contenção</li>
+                                        <li><i class="fas fa-circle"></i> Aparelhos Ortodônticos Fixos</li>
+                                        <li><i class="fas fa-circle"></i> Aparelhos Ortodônticos Removíveis</li>
+                                        <li><i class="fas fa-circle"></i> Aparelho Ortopédico Facial</li>
+                                        <li><i class="fas fa-circle"></i> Placas de Contenção</li>
                                     </ul>
                                 </div>
                             </div>
@@ -360,9 +418,11 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-6">
-                    <div class="card" style="width: 100%;">
+                    <div class="card">
                         <div class="box-titulo">
-                            <h3>TRATAMENTO DE CANAL</h3>
+                            <h3>Tratamento de Canal</h3>
+                            <div class="linha"></div>
+                            <img src="img/servicos/seta.svg">
                         </div>
                         <div class="card-body">
                             <div class="texto-cartao">
@@ -370,11 +430,11 @@
                                     <p>É a remoção do tecido mole que se encontra na parte mais interna do dente (polpa dentária). Esta pode estar sadia ou infectada e, ao ser removida, é substituída por um material obturador.
                                     </p>
                                     <ul style="list-style: none">
-                                        <li><i class="fas fa-check"></i> Endodontia de Dentes Anteriores</li>
-                                        <li><i class="fas fa-check"></i> Endodontia de Dentes Posteriores</li>
-                                        <li><i class="fas fa-check"></i> Tratamento de Lesões Periapicais</li>
-                                        <li><i class="fas fa-check"></i> Tratamento de Infecções Agudas (Abscessos)</li>
-                                        <li><i class="fas fa-check"></i> Tratamento de Pulpite (Dente Inflamado)</li>
+                                        <li><i class="fas fa-circle"></i> Endodontia de Dentes Anteriores</li>
+                                        <li><i class="fas fa-circle"></i> Endodontia de Dentes Posteriores</li>
+                                        <li><i class="fas fa-circle"></i> Tratamento de Lesões Periapicais</li>
+                                        <li><i class="fas fa-circle"></i> Tratamento de Infecções Agudas (Abscessos)</li>
+                                        <li><i class="fas fa-circle"></i> Tratamento de Pulpite (Dente Inflamado)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -383,9 +443,11 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-6">
-                    <div class="card" style="width: 100%;">
+                    <div class="card">
                         <div class="box-titulo">
-                            <h3>ESTÉTICA</h3>
+                            <h3>Estética</h3>
+                            <div class="linha"></div>
+                            <img src="img/servicos/seta.svg">
                         </div>
                         <div class="card-body">
                             <div class="texto-cartao">
@@ -393,11 +455,11 @@
                                     <p>Ramo da odontologia que atua na área da cosmética e restauração dental.
                                     </p>
                                     <ul style="list-style: none">
-                                        <li><i class="fas fa-check"></i> Facetas de Porcelana (Lentes de Contato)</li>
-                                        <li><i class="fas fa-check"></i> Restaurações em Resina</li>
-                                        <li><i class="fas fa-check"></i> Alinhamento Gengival</li>
-                                        <li><i class="fas fa-check"></i> Clareamento Dental</li>
-                                        <li><i class="fas fa-check"></i> Bichectomia</li>
+                                        <li><i class="fas fa-circle"></i> Facetas de Porcelana (Lentes de Contato)</li>
+                                        <li><i class="fas fa-circle"></i> Restaurações em Resina</li>
+                                        <li><i class="fas fa-circle"></i> Alinhamento Gengival</li>
+                                        <li><i class="fas fa-circle"></i> Clareamento Dental</li>
+                                        <li><i class="fas fa-circle"></i> Bichectomia</li>
                                     </ul>
                                 </div>
                             </div>
@@ -406,9 +468,11 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-6">
-                    <div class="card" style="width: 100%;">
+                    <div class="card">
                         <div class="box-titulo">
-                            <h3>ODONTOPEDIATRIA</h3>
+                            <h3>Odontopediatria</h3>
+                            <div class="linha"></div>
+                            <img src="img/servicos/seta.svg">
                         </div>
                         <div class="card-body">
                             <div class="texto-cartao">
@@ -416,11 +480,11 @@
                                     <p>Odontopediatria é uma especialização da Odontologia que cuida da saúde bucal de crianças e adolescentes.
                                     </p>
                                     <ul style="list-style: none">
-                                        <li><i class="fas fa-check"></i> Tratamento Preventivo de Cáries</li>
-                                        <li><i class="fas fa-check"></i> Profilaxia e Aplicação de Flúor</li>
-                                        <li><i class="fas fa-check"></i> Restaurações Dentárias</li>
-                                        <li><i class="fas fa-check"></i> Tratamento de Canal</li>
-                                        <li><i class="fas fa-check"></i> Extrações de “Dentes de Leite”</li>
+                                        <li><i class="fas fa-circle"></i> Tratamento Preventivo de Cáries</li>
+                                        <li><i class="fas fa-circle"></i> Profilaxia e Aplicação de Flúor</li>
+                                        <li><i class="fas fa-circle"></i> Restaurações Dentárias</li>
+                                        <li><i class="fas fa-circle"></i> Tratamento de Canal</li>
+                                        <li><i class="fas fa-circle"></i> Extrações de “Dentes de Leite”</li>
                                     </ul>
                                 </div>
                             </div>
@@ -429,9 +493,11 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-6">
-                    <div class="card" style="width: 100%;">
+                    <div class="card">
                         <div class="box-titulo">
-                            <h3>PERIODONTIA</h3>
+                            <h3>Periodontia</h3>
+                            <div class="linha"></div>
+                            <img src="img/servicos/seta.svg">
                         </div>
                         <div class="card-body">
                             <div class="texto-cartao">
@@ -439,10 +505,10 @@
                                     <p>Periodontia ou periodontologia é a ciência que estuda e trata as doenças do sistema de implantação e suporte dos dentes, formado por osso alveolar e tecido gengival.
                                     </p>
                                     <ul style="list-style: none">
-                                        <li><i class="fas fa-check"></i> Raspagem de Tártaros</li>
-                                        <li><i class="fas fa-check"></i> Limpeza Profilática</li>
-                                        <li><i class="fas fa-check"></i> Controle da Inflamação Gengival (Gengivite)</li>
-                                        <li><i class="fas fa-check"></i> Tratamento de Periodontite</li>
+                                        <li><i class="fas fa-circle"></i> Raspagem de Tártaros</li>
+                                        <li><i class="fas fa-circle"></i> Limpeza Profilática</li>
+                                        <li><i class="fas fa-circle"></i> Controle da Inflamação Gengival (Gengivite)</li>
+                                        <li><i class="fas fa-circle"></i> Tratamento de Periodontite</li>
                                     </ul>
                                 </div>
                             </div>
@@ -451,9 +517,11 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-6">
-                    <div class="card" style="width: 100%;">
+                    <div class="card">
                         <div class="box-titulo">
-                            <h3>CIRURGIAS EM GERAL</h3>
+                            <h3>Cirurgias em geral</h3>
+                            <div class="linha"></div>
+                            <img src="img/servicos/seta.svg">
                         </div>
                         <div class="card-body">
                             <div class="texto-cartao">
@@ -461,11 +529,11 @@
                                     <p>Cirurgias que a Clínica Louvre realiza
                                     </p>
                                     <ul style="list-style: none">
-                                        <li><i class="fas fa-check"></i> Extrações de Sisos / 3º Molar</li>
-                                        <li><i class="fas fa-check"></i> Extrações de Dentes com Mobilidade</li>
-                                        <li><i class="fas fa-check"></i> Extrações de Dentes Inclusos e Supranumerários</li>
-                                        <li><i class="fas fa-check"></i> Cirurgias para Correção do Sorriso</li>
-                                        <li><i class="fas fa-check"></i> Frenectomia</li>
+                                        <li><i class="fas fa-circle"></i> Extrações de Sisos / 3º Molar</li>
+                                        <li><i class="fas fa-circle"></i> Extrações de Dentes com Mobilidade</li>
+                                        <li><i class="fas fa-circle"></i> Extrações de Dentes Inclusos e Supranumerários</li>
+                                        <li><i class="fas fa-circle"></i> Cirurgias para Correção do Sorriso</li>
+                                        <li><i class="fas fa-circle"></i> Frenectomia</li>
                                     </ul>
                                 </div>
                             </div>
