@@ -163,8 +163,6 @@
     }
     
     .diferenciais img {
-        width: 100px;
-        height: 120px;
         display: block;
         margin-right: auto;
         margin-left: auto;
@@ -213,6 +211,17 @@
         /* Primary-Salmon / Salmon */
         background: #FAAB90;
         border-right: 3px solid transparent;
+    }
+    
+    .imagem-servicos {
+        height: 80px;
+        width: 80px;
+        border-radius: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* Primary-Salmon / Salmon */
+        background-color: #FAAB90;
     }
     
     @media all and (max-width: 800px) {
@@ -274,13 +283,6 @@
             background: #FAAB90;
             margin-bottom: 0px;
             padding-bottom: 0px;
-        }
-        .diferenciais img {
-            width: 80px;
-            height: 120px;
-            display: block;
-            margin-right: auto;
-            margin-left: auto;
         }
     }
     
@@ -547,30 +549,66 @@
     <section id="diferenciais-clinica" class="config-difernciais">
         <div class="servicos">
             <h1 class="titulo">Nossos Diferenciais</h1>
-            <div class="row  pt-3 diferenciais">
-                <div class="col p-3">
-                    <img src="img/diferenciais/profissionais_qualificados.svg" class="card-img-top" alt="profissionais_qualificados">
-                    <div class="text">
-                        <p>Profissionais Certificados</p>
+            <div class="row  p-3 diferenciais">
+                <div class="col-lg-3 col-md-3">
+                    <div class="row m-3" style="background-color: #FDE1D8;border-radius: 25px 0px 25px 25px; margin-left: auto">
+                        <div class="col-lg-4 p-3">
+                            <div class=" imagem-servicos ">
+                                <img class="p-3" src="img/diferenciais/pro.png " alt="profissionais_qualificados ">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 pt-3">
+                            <div class="text">
+                                <p>Profissionais Certificados</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col p-3">
-                    <img src="img/diferenciais/atendimento_rapido.svg" class="card-img-top" alt="atendimento_rapido">
-                    <div class="text">
-                        <p> Atendimento rápido e eficaz </p>
+                <div class="col-lg-3 col-md-3">
+                    <div class="row m-3" style="background-color: #FDE1D8;border-radius: 25px 0px 25px 25px;margin-left: auto;">
+                        <div class="col-lg-4 p-3">
+                            <div class=" imagem-servicos">
+                                <img class="p-3" src="img/diferenciais/ampu.png " alt="profissionais_qualificados ">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 pt-3">
+                            <div class="text">
+                                <p>Atendimento rápido e eficaz</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col p-3">
-                    <img src="img/diferenciais/agendamento_online.svg" class="card-img-top" alt="agendamento_online">
-                    <div class="text">
-                        <p><a href="https://wa.me/556199820849" target="_blank">Agendamento online</a></p>
+                <div class="col-lg-3 col-md-3">
+                    <div class="row m-3" style="background-color: #FDE1D8;border-radius: 25px 0px 25px 25px;margin-left: auto;">
+                        <div class="col-lg-4 p-3">
+                            <div class=" imagem-servicos ">
+                                <img class="p-3 " src="img/diferenciais/agen.png " alt="profissionais_qualificados ">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 pt-3">
+                            <div class="text">
+                                <p>Agendamento online</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col p-3">
-                    <img src="img/diferenciais/pagamentos_facilitados.svg" class="card-img-top" alt="pagamentos_facilitados">
-                    <div class="text">
+                <div class="col-lg-3 col-md-3">
+                    <div class="row m-3" style="background-color: #FDE1D8;border-radius: 25px 0px 25px 25px;margin-left: auto;">
+                        <div class="col-lg-4 p-3">
+                            <div class=" imagem-servicos ">
+                                <img class="p-3 " src="img/diferenciais/card.png " alt="profissionais_qualificados ">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 pt-3">
+                            <div class="text">
+                                <p>Pagamentos facilitados</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<img src="img/diferenciais/pagamentos_facilitados.svg " alt="pagamentos_facilitados ">
+                    <div class="text ">
                         <p>Pagamentos facilitados</p>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>

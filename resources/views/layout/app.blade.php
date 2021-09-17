@@ -66,6 +66,41 @@
         margin-top: 5%;
     }
     
+    .rodape-imagem img {
+        display: block;
+        margin-left: 0px;
+        margin-right: auto;
+        position: relative;
+    }
+    
+    .rodape {
+        background-image: url("img/rodape/Background.png");
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        height: 75vh;
+    }
+    
+    .box-inf-rod {
+        margin-top: 27%;
+    }
+    
+    .texto-rodape li {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        /*  padding-left: 5px;*/
+        padding-top: 10px;
+        list-style: none;
+    }
+    
+    .texto-rodape i {
+        font-size: 0.53em;
+        color: #FAAB90;
+    }
+    
     .imagem-elipse {
         display: block;
         margin-right: auto;
@@ -80,30 +115,18 @@
     }
     
     .mapa iframe {
+        margin-top: 25%;
         width: 70%;
         height: 360px;
         padding-top: 15px;
     }
-    
-    .info-rodape img {
+    /*  .info-rodape img {
         display: inline-block;
-    }
-    
-    .info-rodape p {
-        display: inline-block;
-        text-align: center;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-        color: #000000;
-        padding-left: 5px;
-        padding-top: 10px;
-    }
+    }*/
     
     .config-rodape {
         margin-top: 50px;
+        display: inline-block;
     }
     
     .link-contato {
@@ -120,7 +143,17 @@
         color: #FFFF8B;
     }
     
+    .redes-sociais img {
+        padding: 10%;
+    }
+    
     @media all and (max-width: 800px) {
+        .redes-sociais img {
+            padding: 3%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
         .logo {
             display: block;
             margin-right: auto;
@@ -128,6 +161,21 @@
             width: 70%;
             margin-top: 5%;
             margin-bottom: 5%
+        }
+        .rodape {
+            background-image: url("img/rodape/Background.png");
+            background-repeat: no-repeat, repeat;
+            background-size: cover;
+            height: 160vh;
+        }
+        .box-inf-rod {
+            margin-top: 20%;
+        }
+        .rodape-imagem img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10px;
         }
         .config-nav .config-itens {
             margin-left: 0%;
@@ -146,13 +194,26 @@
         .mapa iframe {
             width: 100%;
             height: 300px;
+            padding-bottom: 10%;
         }
         .info-rodape img {
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
-        .info-rodape p {
+        .texto-rodape li {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+            /*  padding-left: 5px;*/
+            padding-top: 10px;
+            list-style: none;
+            text-align: center;
+        }
+        /* .info-rodape li {
             display: block;
             text-align: center;
             font-family: Montserrat;
@@ -163,7 +224,9 @@
             color: #000000;
             padding-left: 5px;
             padding-top: 10px;
-        }
+            text-align: center;
+            border: 1px solid yellow;
+        }*/
     }
 </style>
 
@@ -194,7 +257,7 @@
 
 <body class="antialiased">
     <main>
-        <div class=" config-nav">
+        <div class="config-nav">
             <nav class="container-fluid navbar navbar-expand-lg navbar-light">
                 <div class="row">
                     <a class="navbar-brand" href="#">
@@ -225,42 +288,97 @@
             </div>
         </div>
         <footer>
-            <div class="container-fluid" style="background-color: #FAAB90; padding: 30px;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="config-rodape">
-                                <div class="row">
-                                    <div class="info-rodape">
-                                        <img src="img/rodape/relogio.svg">
-                                        <p>Atendimento de segunda a sexta-feira das 08 às 18 horas</p>
-                                        <p style="margin-left: 20px;">Sábado de 08 às 12 horas</p>
+            <div class="container-fluid">
+                <div class="rodape">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="box-inf-rod ">
+                                    <div class="row">
+                                        <div class="col-lg-1">
+                                            <div class="rodape-imagem">
+                                                <img src="img/rodape/alarm.png">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="texto-rodape">
+                                                <li style="color: #000000;font-weight: bold;">Horários de atendimento:</li>
+                                                <ul>
+                                                    <li><i class="fas fa-circle"></i> Segunda a Sexta-feira das 09 às 18 horas</li>
+                                                    <li> <i class="fas fa-circle"></i> Sábado de 08 às 12 horas</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="info-rodape">
-                                        <img src="img/rodape/telefone.svg">
-                                        <p><a class="link-contato" href="https://wa.me/556199820849" target="_blank">(61) 99982-0849</a></p>
+                                    <!--Tefefone-->
+                                    <div class="row">
+                                        <div class="col-lg-1">
+                                            <div class="rodape-imagem">
+                                                <img src="img/rodape/tele.png">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="texto-rodape">
+                                                <li style="color: #000000;font-weight: bold;">Telefone</li>
+                                                <li><a class="link-contato" href="https://wa.me/556199820849" target="_blank">(61) 99982-0849</a></li>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="info-rodape">
-                                        <img src="img/rodape/contato.svg">
-                                        <p><a class="link-contato" href="mailto:clinicaslouvre@gmail.com?Subject=Título%20da%20mensagem" target="_blank">clinicaslouvre@gmail.com</a></p>
+                                    <!--Email-->
+                                    <div class="row pt-3">
+                                        <div class="col-lg-1">
+                                            <div class="rodape-imagem">
+                                                <img src="img/rodape/email.png">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="texto-rodape">
+                                                <li style="color: #000000;font-weight: bold;">E-mail</li>
+                                                <li><a class="link-contato" href="mailto:clinicaslouvre@gmail.com?Subject=Título%20da%20mensagem" target="_blank">clinicaslouvre@gmail.com</a></li>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="info-rodape">
-                                        <img src="img/rodape/localizacao.svg">
-                                        <p>Avenida Bosque, nº 160 - Formosa/GO</p>
+                                    <!--Endereco-->
+                                    <div class="row pt-3">
+                                        <div class="col-lg-1">
+                                            <div class="rodape-imagem">
+                                                <img src="img/rodape/endereco.png">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="texto-rodape">
+                                                <li style="color: #000000;font-weight: bold;">Endereço</li>
+                                                <li>Avenida Bosque, nº 160 - Formosa/GO</li>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="info-rodape">
-                                        <a class="link-contato" href="https://www.facebook.com/clinicaslouvre" target="_blank"><i class="fab fa-facebook-square icone"></i></a>
-                                        <a class="link-contato p-3" href="https://www.instagram.com/louvreclinica/" target="_blank"><i class="fab fa-instagram icone"></i></a>
+                                    <!--Redes sociais-->
+                                    <div class="redes-sociais">
+                                        <div class="row pt-3">
+                                            <div class="col-lg-1 col-xs-12">
+                                                <a href="https://www.facebook.com/clinicaslouvre" target="_blank"><img src="img/rodape/Facebook.png"></a>
+                                            </div>
+                                            <div class="col-lg-1 col-xs-12">
+                                                <a href="//www.instagram.com/louvreclinica/" target="_blank"><img src="img/rodape/Instagram.png"></a>
+                                            </div>
+                                            <div class="col-lg-1 col-xs-12">
+                                                <a href="https://wa.me/556199820849" target="_blank"><img src="img/rodape/WhatsApp.png"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="texto-rodape">
+                                        <li>© 2021 Clínica Louvre - Todos os direitos reservados.</li>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 mapa">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.7762012213366!2d-47.34021838460501!3d-15.550123621138205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9350a36cf7b36529%3A0xd5cfaa5984ad4245!2sCl%C3%ADnica%20Louvre!5e0!3m2!1spt-BR!2sbr!4v1629177469269!5m2!1spt-BR!2sbr"
-                                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <div class="col-lg-6 col-md-6 mapa">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.7762012213366!2d-47.34021838460501!3d-15.550123621138205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9350a36cf7b36529%3A0xd5cfaa5984ad4245!2sCl%C3%ADnica%20Louvre!5e0!3m2!1spt-BR!2sbr!4v1629177469269!5m2!1spt-BR!2sbr"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </footer>
 
