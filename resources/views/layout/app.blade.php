@@ -9,7 +9,7 @@
     }*/
     
     body {
-        background: #E5E5E5;
+        background: #FAFFFC !important;
     }
     
     .config-nav .navbar-expand-lg {
@@ -17,8 +17,13 @@
         /* Necessário para funcionar no Safari */
         position: sticky;
         top: 0;
-        background: #FFFFFF;
         z-index: 1000;
+        background: #FAFFFC;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .config-nav .config-itens {
+        margin-left: 60%;
     }
     
     .config-itens .no-select {
@@ -57,8 +62,8 @@
         display: block;
         margin-right: auto;
         margin-left: auto;
-        /*  width: 100%;*/
-        margin-top: 5%
+        width: 75%;
+        margin-top: 5%;
     }
     
     .imagem-elipse {
@@ -120,9 +125,12 @@
             display: block;
             margin-right: auto;
             margin-left: auto;
-            width: 75%;
+            width: 70%;
             margin-top: 5%;
             margin-bottom: 5%
+        }
+        .config-nav .config-itens {
+            margin-left: 0%;
         }
         .config-itens .item-menu {
             display: block;
@@ -186,20 +194,20 @@
 
 <body class="antialiased">
     <main>
-        <div class="container-md container-lg container-sm config-nav">
-            <nav class="navbar navbar-expand-lg navbar-light">
+        <div class=" config-nav">
+            <nav class="container-fluid navbar navbar-expand-lg navbar-light">
                 <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                        <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="#">
+                        <div class="box-imagem-logo">
                             <img class="logo" src="img/logo.svg" alt="Logo">
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav config-itens pt-3">
+                <div class="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
+                    <ul class="navbar-nav config-itens pt-3 mr-4">
                         <li class="nav-item item-menu">
                             <a class="nav-link  active" href="#box-apresentacao">Início</a>
                         </li>
@@ -212,7 +220,9 @@
                     </ul>
                 </div>
             </nav>
-            @yield('content')
+            <div class="container">
+                @yield('content')
+            </div>
         </div>
         <footer>
             <div class="container-fluid" style="background-color: #FAAB90; padding: 30px;">
